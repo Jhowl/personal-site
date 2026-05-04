@@ -1,9 +1,8 @@
 import './style.css'
+import initChat from './chat.js'
 
-// Main JavaScript entry point
-// Main JavaScript entry point
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Jonathan Costa Portfolio Loaded');
+  initChat();
 
   // Dynamic Year
   const yearSpan = document.getElementById('current-year');
