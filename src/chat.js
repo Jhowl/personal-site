@@ -62,6 +62,10 @@ export default function initChat() {
           <div class="chat-title">Ask about Jonathan</div>
           <div class="chat-status">Local LLM · gemma4:e4b</div>
         </div>
+        <a class="chat-action" href="mailto:${EMAIL_ADDRESS}?subject=Hello%20Jonathan"
+          aria-label="Email Jonathan" title="Email Jonathan">${ICON_MAIL}</a>
+        <a class="chat-action" href="${CALENDLY_URL}" target="_blank" rel="noopener"
+          aria-label="Book a call" title="Book a call">${ICON_CAL}</a>
         <button class="chat-close" aria-label="Close chat" type="button">&times;</button>
       </div>
       <div class="chat-log" role="log" aria-live="polite"></div>

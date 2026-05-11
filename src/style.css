@@ -848,6 +848,30 @@ a.project-card:hover .cta-arrow {
   font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 }
 
+.chat-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s, transform 0.2s;
+  flex-shrink: 0;
+}
+
+.chat-action:hover {
+  color: var(--accent-orange);
+  background-color: rgba(255, 122, 26, 0.08);
+  transform: translateY(-1px);
+}
+
+.chat-action svg {
+  width: 17px;
+  height: 17px;
+}
+
 .chat-close {
   background: transparent;
   border: none;
@@ -857,6 +881,7 @@ a.project-card:hover .cta-arrow {
   padding: 0 0.4rem;
   cursor: pointer;
   border-radius: 4px;
+  flex-shrink: 0;
 }
 
 .chat-close:hover {
